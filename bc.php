@@ -39,7 +39,7 @@ file_put_contents('in.json', json_encode($info));
                     try{
                         $MadelineProto->channels->updateUsername(['channel' => $chat_mack, 'username' => $user]);                       
                         $ch = file_get_contents("ch");
-bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "𓆩 We are the strongest @iii8i !'\n⎱UserName: ❲ @$user ❳\n⎱ClickS: ❲ $x ❳\n⎱Save: ❲ Channel ❳"]);
+bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "𓆩 We are the strongest @ss_sz !'\n⎱UserName: ❲ @$user ❳\n⎱ClickS: ❲ $x ❳\n⎱Save: ❲ Channel ❳"]);
 bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "𓆩 - Checker #2 New Caught ! 🐊'",]);
                         $MadelineProto->messages->sendMessage(['peer' => $chat_mack, 'message' => "𓆩 We are the strongest @iii8i !'\n⎱UserName: ❲ @$user ❳\n⎱ClickS: ❲ $x ❳\n⎱Save: ❲ Channel ❳"]);
                         $data = str_replace("\n".$user,"", file_get_contents("u2"));
@@ -54,9 +54,9 @@ bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "𓆩 - Chec
                          $updates = $MadelineProto->channels->createChannel(['broadcast' => true,'megagroup' => false,'title' => file_get_contents("name"), ]);
                         $chat = $updates['updates'][1];
                         $MadelineProto->channels->updateUsername(['channel' => $chat, 'username' => $user]);
-                        bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "𓆩 We are the strongest @iii8i !'\n⎱UserName: ❲ @$user ❳\n⎱ClickS: ❲ $x ❳\n⎱Save: ❲ Channel ❳"]);
+                        bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "𓆩 We are the strongest @ss_sz !'\n⎱UserName: ❲ @$user ❳\n⎱ClickS: ❲ $x ❳\n⎱Save: ❲ Channel ❳"]);
                         bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "𓆩 - Checker #2 New Caught ! 🐊'",]);
-                        $MadelineProto->messages->sendMessage(['peer' => $chat, 'message' => "𓆩 We are the strongest @iii8i !'\n⎱UserName: ❲ @$user ❳\n⎱ClickS: ❲ $x ❳\n⎱Save: ❲ Channel ❳"]);
+                        $MadelineProto->messages->sendMessage(['peer' => $chat, 'message' => "𓆩 We are the strongest @ss_sz !'\n⎱UserName: ❲ @$user ❳\n⎱ClickS: ❲ $x ❳\n⎱Save: ❲ Channel ❳"]);
                         $data = str_replace("\n".$user,"", file_get_contents("u2"));
                         file_put_contents("u2", $data);
                         }elseif($e->getMessage() == "USERNAME_OCCUPIED"){
