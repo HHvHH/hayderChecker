@@ -36,7 +36,7 @@ foreach($users as $user){
         $x++;
     }catch (\danog\MadelineProto\Exception | \danog\MadelineProto\RPCErrorException $e) {
                 try{$MadelineProto->account->updateUsername(['username'=>$user]);
-                    bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "𓆩 We are the strongest @iii8i !'\n⎱UserName: ❲ @$user ❳\n⎱ClickS: ❲ $x ❳\n⎱Save: ❲ Account ❳"]);
+                    bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "𓆩 We are the strongest @ss_sz !'\n⎱UserName: ❲ @$user ❳\n⎱ClickS: ❲ $x ❳\n⎱Save: ❲ Account ❳"]);
                     bot('sendMessage', ['chat_id' => file_get_contents("ID"), 'text' => "𓆩 - Checker #7 New Caught ! 🐊'",]);
                     $data = str_replace("\n".$user,"", file_get_contents("u7"));
                     file_put_contents("u7", $data);
